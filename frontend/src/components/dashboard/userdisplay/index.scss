@@ -1,0 +1,18 @@
+.user-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-container {
+        margin-top: 2rem;
+
+        .input-container {
+            margin-bottom: 2vh;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+  box-sizing: border-box;
+  // background-color: #634545;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCE9FE; 
+  border-radius: 10px;
+
+  &:hover{
+    background: #b9c8df; 
+  }
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8c0c0;
+}
+
+.progress-bar {
+  width: 400px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 5vh 0vh;
+
+  div {
+    width: 20%;
+    height: 100%;
+    background: #948489;
+    box-shadow: inset 20px 20px 60px #7e7074,
+            inset -20px -20px 60px #aa989e;
+  }
+}
+
+.form-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8c0c0;
+}
+
+.form-container {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #634545;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vh 0vh;
+    .previous-button,
+    .next-button {
+      border-radius: 50px;
+      background: #f0e6f9;
+      box-shadow: inset 20px 20px 60px #ccc4d4,
+            inset -20px -20px 60px #ffffff;
+      color: #634545;
+      width: 10em;
+      height: 5vh;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .submit-button {
+      border-radius: 50px;
+      background: #b3b1b4;
+      box-shadow: inset 20px 20px 60px #989699,
+            inset -20px -20px 60px #cecccf;
+      color: #634545;
+      width: 10em;
+      height: 6vh;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.p-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1vh;
+    }
+    .about-me {
+        width: 100%;
+    }
+}

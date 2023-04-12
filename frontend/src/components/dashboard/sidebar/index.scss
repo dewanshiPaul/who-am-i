@@ -1,0 +1,76 @@
+.sidebar-container {
+    padding: 3vh 1.5vw;
+    width: 100%;
+    // background-color: rgb(240, 252, 252);
+    background-color: #DCE9FE;
+    box-shadow: 4px 0px 5px rgb(227, 224, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh; //later change
+    position: sticky;
+    top: 10vh;
+    left: 0px;
+    border-radius: 10px;
+
+    .top {
+        padding: 5vh 0vh;
+
+    }
+
+}
+
+.icon {
+    padding: 2vh 0vh;
+    margin-bottom: 1vh;
+    color: #272727;
+    cursor: pointer;
+    
+    .home-icon, 
+    .resume-icon, 
+    .chat-icon,
+    .userprofile-icon,
+    .logout-icon {
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+
+        &:hover {
+            animation-name: squeezeBounce;
+        }
+    }
+
+    &:hover {
+        .ptr {
+            background-color: black;
+            height: 5px;
+            width: 100%;
+            border-radius: 100%;
+        }
+    }
+}
+
+@keyframes squeezeBounce {
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        -ms-transform:     translateY(0);
+        transform:         translateY(0);
+        transform: scale(1);
+    }
+    40% {
+        -webkit-transform: translateY(-10px) scale(1.2);
+        -ms-transform:     translateY(-10px) scale(1.2);
+        transform:         translateY(-10px) scale(1.2);
+    }
+    60% {
+        -webkit-transform: translateY(-5px) scale(1.5);
+        -ms-transform:     translateY(-5px) scale(1.5);
+        transform:         translateY(-5px) scale(1.5);
+    }
+}
