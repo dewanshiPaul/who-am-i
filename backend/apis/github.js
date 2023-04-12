@@ -57,7 +57,7 @@ const getUserInfo = (username) => {
             'X-GitHub-Api-Version': '2022-11-28',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1521.3 Safari/537.36'
         },
-        auth: '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'
+        auth: 'your-github-access-token'
     }
     return new Promise((resolve,reject) => {
         const request = https.get(option, (response) => {
