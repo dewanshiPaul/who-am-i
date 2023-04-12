@@ -1,0 +1,20 @@
+.pr-container {
+    .container {
+        .line {
+            display: block;
+            width: 100%;
+            background: black;
+            height: 1px;
+            margin-bottom: 1vh;
+        }
+    }
+    .add-footer {
+        position: fixed;
+        right: 2vh;
+        bottom: 1vh;
+        .ripple-button {
+            width: auto;
+            padding: 1vh 2vh;
+        }
+    }
+}

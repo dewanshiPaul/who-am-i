@@ -1,0 +1,13 @@
+.dashboard-container {
+    margin-top: 10vh;
+    // display: grid;
+    // grid-template-columns: 5vw 95vw;
+
+    .sidebar {
+        position: fixed;
+    }
+
+    .content-display {
+        margin-left: 5vw;
+    }
+}

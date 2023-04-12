@@ -1,0 +1,122 @@
+.home-container {
+    padding: 1vh 2vh;
+    background-color: #fefdfd;
+    height: 90vh; //change later
+    width: 100%;
+
+    &-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1vh;
+
+        .home-container-cards {
+            display: grid;
+            grid-template-rows: auto auto;
+            gap: 1vh;
+
+            .loading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .platform-details-container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                
+                .labels {
+                    font-weight: 600;
+                    color: gray;
+                }
+
+                .community-stats, 
+                .community-stats-changes,
+                .current-rank,
+                .max-rank,
+                .other-details,
+                .counts,
+                .account,
+                .profile-stats,
+                .streak-stats {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .questions-languages-solved {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                }
+
+                .total-question-top, .contest-details {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .badges-display {
+                    display: flex;
+                    align-items: center;
+                    overflow-x: scroll;
+                    justify-content: space-between;
+
+                    .badge-container {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        font-size: 12px;
+                        padding: 1.5vh;
+                    }
+                }
+
+                .language-container,
+                .topics-container,
+                .forked-container,
+                .orgs-container {
+                    padding: 1vh 0vh;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 4px;
+
+                    .chip {
+                        background-color: #DCE9FE;
+                    }
+                }
+
+                .activity {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+
+                    div {
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+                }
+
+                .contest {
+                    max-height: 50vh;
+                    overflow-y: scroll;
+                    margin-top: 3vh;
+
+                    table {
+                        width: 100%;
+
+                        thead {
+                            top: 0;
+                            position: sticky;
+                            background-color: white;
+
+                            th {
+                                border: 2px solid #DCE9FE;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

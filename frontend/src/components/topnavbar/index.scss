@@ -1,0 +1,46 @@
+.top-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: #0062D1;
+    background-color: #DCE9FE;
+    box-shadow: 1px 2px 4px #86888a;
+    // padding: 1rem 2rem;
+    padding: 2vh 5vh;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    border-radius: 0px 0px 4px 4px;
+
+    .suggestion-container {
+        position: absolute;
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        color: #726d6d;
+        flex-direction: column;
+        align-items: center;
+
+        .loading,
+        .no-result {
+            padding: 1.5vh;
+        }
+
+        .suggest {
+            width: 100%;
+            padding: 1.5vh;
+            cursor: pointer;
+            
+            .info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &:hover {
+                background: #F1F1F1;
+            }
+        }
+    }
+}

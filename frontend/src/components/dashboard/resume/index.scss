@@ -1,0 +1,71 @@
+.resume-container {
+    background-color: #fefdfd;
+
+    .container {
+        .resume-pdf-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+            grid-gap: 5vw;
+            padding: 2vh 2vw 
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            .heading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .close {
+                    position: fixed;
+                    right: 2vh;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .form {
+                padding: 2vh 2vh;
+
+                .button-footer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .new-resume-container {
+        position: fixed;
+        right: 2vh;
+        bottom: 5vh;
+    }
+
+    .templates-container {
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .close {
+                position: fixed;
+                right: 2vh;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .templates {
+            display: flex;
+            justify-content: center;
+            padding: 2vh 4vh;
+
+            .container {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+}
