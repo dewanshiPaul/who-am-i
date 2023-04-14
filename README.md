@@ -29,6 +29,8 @@ The problem at hand is that there is currently no single platform available that
   + Backend
     + Express Js
     + Cheerio
+  + Database
+    + Mongo DB
 ## Improvements
   1. Add more profiles
   2. Improve UI
